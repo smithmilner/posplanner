@@ -1,5 +1,5 @@
 module.exports = {
-  "12235": {
+  "Amarr Control Tower": {
     "typeID": "12235",
     "typeName": "Amarr Control Tower",
     "attributes": {
@@ -44,7 +44,7 @@ module.exports = {
       "capacitySecondary": "50000"
     }
   },
-  "12236": {
+  "Gallente Control Tower": {
     "typeID": "12236",
     "typeName": "Gallente Control Tower",
     "attributes": {
@@ -88,7 +88,7 @@ module.exports = {
       "capacitySecondary": "50000"
     }
   },
-  "16213": {
+  "Caldari Control Tower": {
     "typeID": "16213",
     "typeName": "Caldari Control Tower",
     "attributes": {
@@ -133,7 +133,7 @@ module.exports = {
       "capacitySecondary": "50000"
     }
   },
-  "16214": {
+  "Minmatar Control Tower": {
     "typeID": "16214",
     "typeName": "Minmatar Control Tower",
     "attributes": {
@@ -178,7 +178,7 @@ module.exports = {
       "capacitySecondary": "50000"
     }
   },
-  "20059": {
+  "Amarr Control Tower Medium": {
     "typeID": "20059",
     "typeName": "Amarr Control Tower Medium",
     "attributes": {
@@ -225,7 +225,7 @@ module.exports = {
       "capacitySecondary": "25000"
     }
   },
-  "20060": {
+  "Amarr Control Tower Small": {
     "typeID": "20060",
     "typeName": "Amarr Control Tower Small",
     "attributes": {
@@ -272,7 +272,7 @@ module.exports = {
       "capacitySecondary": "12500"
     }
   },
-  "20061": {
+  "Caldari Control Tower Medium": {
     "typeID": "20061",
     "typeName": "Caldari Control Tower Medium",
     "attributes": {
@@ -319,7 +319,7 @@ module.exports = {
       "capacitySecondary": "25000"
     }
   },
-  "20062": {
+  "Caldari Control Tower Small": {
     "typeID": "20062",
     "typeName": "Caldari Control Tower Small",
     "attributes": {
@@ -366,7 +366,7 @@ module.exports = {
       "capacitySecondary": "12500"
     }
   },
-  "20063": {
+  "Gallente Control Tower Medium": {
     "typeID": "20063",
     "typeName": "Gallente Control Tower Medium",
     "attributes": {
@@ -412,7 +412,7 @@ module.exports = {
       "capacitySecondary": "25000"
     }
   },
-  "20064": {
+  "Gallente Control Tower Small": {
     "typeID": "20064",
     "typeName": "Gallente Control Tower Small",
     "attributes": {
@@ -458,7 +458,7 @@ module.exports = {
       "capacitySecondary": "12500"
     }
   },
-  "20065": {
+  "Minmatar Control Tower Medium": {
     "typeID": "20065",
     "typeName": "Minmatar Control Tower Medium",
     "attributes": {
@@ -505,7 +505,7 @@ module.exports = {
       "capacitySecondary": "25000"
     }
   },
-  "20066": {
+  "Minmatar Control Tower Small": {
     "typeID": "20066",
     "typeName": "Minmatar Control Tower Small",
     "attributes": {
@@ -552,7 +552,7 @@ module.exports = {
       "capacitySecondary": "12500"
     }
   },
-  "27530": {
+  "Blood Control Tower": {
     "typeID": "27530",
     "typeName": "Blood Control Tower",
     "attributes": {
@@ -598,7 +598,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27532": {
+  "Dark Blood Control Tower": {
     "typeID": "27532",
     "typeName": "Dark Blood Control Tower",
     "attributes": {
@@ -644,7 +644,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27533": {
+  "Guristas Control Tower": {
     "typeID": "27533",
     "typeName": "Guristas Control Tower",
     "attributes": {
@@ -690,7 +690,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27535": {
+  "Dread Guristas Control Tower": {
     "typeID": "27535",
     "typeName": "Dread Guristas Control Tower",
     "attributes": {
@@ -736,7 +736,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27536": {
+  "Serpentis Control Tower": {
     "typeID": "27536",
     "typeName": "Serpentis Control Tower",
     "attributes": {
@@ -781,7 +781,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27538": {
+  "Shadow Control Tower": {
     "typeID": "27538",
     "typeName": "Shadow Control Tower",
     "attributes": {
@@ -826,7 +826,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27539": {
+  "Angel Control Tower": {
     "typeID": "27539",
     "typeName": "Angel Control Tower",
     "attributes": {
@@ -872,7 +872,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27540": {
+  "Domination Control Tower": {
     "typeID": "27540",
     "typeName": "Domination Control Tower",
     "attributes": {
@@ -918,7 +918,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27589": {
+  "Blood Control Tower Medium": {
     "typeID": "27589",
     "typeName": "Blood Control Tower Medium",
     "attributes": {
@@ -966,7 +966,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27591": {
+  "Dark Blood Control Tower Medium": {
     "typeID": "27591",
     "typeName": "Dark Blood Control Tower Medium",
     "attributes": {
@@ -1014,7 +1014,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27592": {
+  "Blood Control Tower Small": {
     "typeID": "27592",
     "typeName": "Blood Control Tower Small",
     "attributes": {
@@ -1062,7 +1062,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27594": {
+  "Dark Blood Control Tower Small": {
     "typeID": "27594",
     "typeName": "Dark Blood Control Tower Small",
     "attributes": {
@@ -1110,7 +1110,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27595": {
+  "Guristas Control Tower Medium": {
     "typeID": "27595",
     "typeName": "Guristas Control Tower Medium",
     "attributes": {
@@ -1158,7 +1158,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27597": {
+  "Dread Guristas Control Tower Medium": {
     "typeID": "27597",
     "typeName": "Dread Guristas Control Tower Medium",
     "attributes": {
@@ -1206,7 +1206,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27598": {
+  "Guristas Control Tower Small": {
     "typeID": "27598",
     "typeName": "Guristas Control Tower Small",
     "attributes": {
@@ -1254,7 +1254,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27600": {
+  "Dread Guristas Control Tower Small": {
     "typeID": "27600",
     "typeName": "Dread Guristas Control Tower Small",
     "attributes": {
@@ -1302,7 +1302,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27601": {
+  "Serpentis Control Tower Medium": {
     "typeID": "27601",
     "typeName": "Serpentis Control Tower Medium",
     "attributes": {
@@ -1349,7 +1349,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27603": {
+  "Shadow Control Tower Medium": {
     "typeID": "27603",
     "typeName": "Shadow Control Tower Medium",
     "attributes": {
@@ -1396,7 +1396,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27604": {
+  "Serpentis Control Tower Small": {
     "typeID": "27604",
     "typeName": "Serpentis Control Tower Small",
     "attributes": {
@@ -1443,7 +1443,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27606": {
+  "Shadow Control Tower Small": {
     "typeID": "27606",
     "typeName": "Shadow Control Tower Small",
     "attributes": {
@@ -1490,7 +1490,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27607": {
+  "Angel Control Tower Medium": {
     "typeID": "27607",
     "typeName": "Angel Control Tower Medium",
     "attributes": {
@@ -1538,7 +1538,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27609": {
+  "Domination Control Tower Medium": {
     "typeID": "27609",
     "typeName": "Domination Control Tower Medium",
     "attributes": {
@@ -1586,7 +1586,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27610": {
+  "Angel Control Tower Small": {
     "typeID": "27610",
     "typeName": "Angel Control Tower Small",
     "attributes": {
@@ -1634,7 +1634,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27612": {
+  "Domination Control Tower Small": {
     "typeID": "27612",
     "typeName": "Domination Control Tower Small",
     "attributes": {
@@ -1682,7 +1682,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27780": {
+  "Sansha Control Tower": {
     "typeID": "27780",
     "typeName": "Sansha Control Tower",
     "attributes": {
@@ -1728,7 +1728,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27782": {
+  "Sansha Control Tower Medium": {
     "typeID": "27782",
     "typeName": "Sansha Control Tower Medium",
     "attributes": {
@@ -1776,7 +1776,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27784": {
+  "Sansha Control Tower Small": {
     "typeID": "27784",
     "typeName": "Sansha Control Tower Small",
     "attributes": {
@@ -1824,7 +1824,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27786": {
+  "True Sansha Control Tower": {
     "typeID": "27786",
     "typeName": "True Sansha Control Tower",
     "attributes": {
@@ -1870,7 +1870,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27788": {
+  "True Sansha Control Tower Medium": {
     "typeID": "27788",
     "typeName": "True Sansha Control Tower Medium",
     "attributes": {
@@ -1918,7 +1918,7 @@ module.exports = {
       "metaGroupID": "4"
     }
   },
-  "27790": {
+  "True Sansha Control Tower Small": {
     "typeID": "27790",
     "typeName": "True Sansha Control Tower Small",
     "attributes": {
