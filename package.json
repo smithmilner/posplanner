@@ -2,7 +2,7 @@
   "name": "posplanner",
   "version": "1.0.0",
   "description": "POS Planner for EVE Online.",
-  "main": "index.js",
+  "main": "assets/js/index.js",
   "author": "Smith Milner",
   "license": "ISC",
   "scripts": {
@@ -19,6 +19,7 @@
     ]
   },
   "dependencies": {
+    "flux": "^2.0.1",
     "react": "^0.12.2"
   },
   "devDependencies": {

@@ -1,6 +1,10 @@
-alert('hello world');
+var React = require('react');
+var PosPlanner = require('./posplanner');
 
-/*{
+React.render(<div className="container"><div className="row"><PosPlanner /></div></div>, document.getElementById('app'));
+
+/* Example export data model
+{
   "tower": "Amarr Control Tower",
   "enabled_modules": [
     "x",
@@ -12,4 +16,5 @@ alert('hello world');
     "y",
     "z"
   ]
-}*/
+}
+*/
