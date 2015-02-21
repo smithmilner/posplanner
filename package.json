@@ -8,7 +8,8 @@
   "scripts": {
     "build:sass-dev": "node-sass assets/sass/site.scss public/css/site.min.css",
     "build:sass": "node-sass assets/sass/site.scss --stdout | cleancss -o public/css/site.min.css",
-    "build:js": "browserify -d assets/js/index.js > public/js/index.js",
+    "build:js-dev": "browserify -d assets/js/index.js -o public/js/index.js",
+    "build:js": "browserify assets/js/index.js | uglifyjs - -m -c -o public/js/index.js",
     "build": "npm run build:sass && npm run build:js",
     "watch:js": "watchify -d assets/js/index.js -o public/js/index.js"
   },
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "flux": "^2.0.1",
+    "lodash": "^3.3.0",
     "react": "^0.12.2"
   },
   "devDependencies": {
@@ -28,6 +30,7 @@
     "clean-css": "^3.0.10",
     "node-sass": "^2.0.1",
     "reactify": "^1.0.0",
+    "uglify-js": "^2.4.16",
     "watchify": "^2.3.0"
   }
 }

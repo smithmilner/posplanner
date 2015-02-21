@@ -1,7 +1,11 @@
 var React = require('react');
 var PosPlanner = require('./posplanner');
 
-React.render(<div className="container"><div className="row"><PosPlanner /></div></div>, document.getElementById('app'));
+React.render(
+  <div className="container">
+    <PosPlanner />
+  </div>
+, document.getElementById('app'));
 
 /* Example export data model
 {

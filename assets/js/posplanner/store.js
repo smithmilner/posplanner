@@ -1,16 +1,19 @@
 var constants = require('./constants'),
     dispatcher = require('./dispatcher'),
-    emitter = require('./emitter');
+    emitter = require('./emitter'),
+    _ = require('lodash');
 
 class Store {
   constructor() {
+    this._id = 1;
+
     this._data = {
-      'tower': 'Amarr Control Tower',
-      'modules': [
+      tower: 'Amarr Control Tower',
+      modules: [
         {
-          'id': 1,
-          'name': 'Ammunition Assembly Array',
-          'online': true
+          id: 1,
+          name: 'Ammunition Assembly Array',
+          online: true
         }
       ]
     };
@@ -51,8 +54,7 @@ class Store {
 
   // add module
   _addModule(module) {
-
-    // this._data['modules'].push()
+    this._data['modules'].push({ id: this._id++, name: module, online: true });
     this._notify();
   }
 

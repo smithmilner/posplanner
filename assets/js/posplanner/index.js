@@ -4,10 +4,22 @@ var React = require('react'),
     emitter = require('./emitter')
     require('./store');
 
+var Selectors = require('./components/selectors'),
+    Stats = require('./components/stats');
+
 var POSPlanner = React.createClass({
 
   getInitialState: function() {
-    return {};
+    return {
+      tower: 'Amarr Control Tower',
+      modules: [
+        {
+          id: 1,
+          name: 'Ammunition Assembly Array',
+          online: true
+        }
+      ]
+    };
   },
 
   // add tower event listener
@@ -31,7 +43,11 @@ var POSPlanner = React.createClass({
   },
 
   render: function() {
-    return <span>hello world</span>;
+    // JSX spread attributes to pass all the props.
+    return <div className="row">
+      <Selectors {...this.state} />
+      <Stats {...this.state} />
+    </div>;
   }
 
 });
