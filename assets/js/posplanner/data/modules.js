@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   "Cruise Missile Battery": {
     "typeName": "Cruise Missile Battery",
     "categories": [
