@@ -5,11 +5,9 @@ var data = require('../data/towers');
 
 var Stats = React.createClass({
 
-  render: function() {
-    var tower = _.find(data, 'typeName', this.props.tower);
-
-    return <div className="row">
-      <strong>{this.props.tower}</strong>
+  renderTowerStats: function(tower) {
+    return <div className="tower-stats row">
+      <strong>{tower.typeName}</strong>
       <table>
         <thead>
           <tr>
@@ -25,6 +23,17 @@ var Stats = React.createClass({
         </tbody>
       </table>
     </div>;
+  },
+
+  render: function() {
+    var tower = _.find(data, 'typeName', this.props.tower);
+
+    if (typeof tower !== 'undefined') {
+      return this.renderTowerStats(tower);
+    } else {
+      return <div><strong>No Tower Selected</strong></div>;
+    }
+
   }
 });
 

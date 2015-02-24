@@ -10,9 +10,13 @@ var ModuleStats = React.createClass({
     dispatcher.dispatch({ type: constants.moduleUpdate, content: this.props.module });
   },
 
+  remove: function() {
+    dispatcher.dispatch({ type: constants.moduleRemove, content: this.props.module });
+  },
+
   render: function() {
     var online = this.props.module.online ? 'online' : 'offline';
-    return <li><a href="#" onClick={this.toggle}>{this.props.module.name} - {online}</a></li>
+    return <li><a href="#" onClick={this.remove}>X</a> <a href="#" onClick={this.toggle}>{this.props.module.name}</a></li>
   }
 
 });

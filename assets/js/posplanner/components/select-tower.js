@@ -13,9 +13,13 @@ var SelectTower = React.createClass({
 
   getOptions: function() {
     var stateTower = this.props.tower;
-    return _.map(data, function (tower) {
+    var list = _.map(data, function (tower) {
       return <option key={tower.typeID} value={tower.typeName}>{tower.typeName}</option>;
     });
+
+    list.unshift(<option key="_none" value="">- Select a tower -</option>);
+
+    return list;
   },
 
   render: function() {

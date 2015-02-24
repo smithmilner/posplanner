@@ -8,14 +8,8 @@ class Store {
     this._id = 1;
 
     this._data = {
-      tower: 'Amarr Control Tower',
-      modules: [
-        {
-          id: 1,
-          name: 'Ammunition Assembly Array',
-          online: true
-        }
-      ]
+      'tower': '',
+      'modules': []
     };
 
     dispatcher.register(function(payload) {
@@ -68,6 +62,9 @@ class Store {
 
   // remove module
   _removeModule(module) {
+    _.remove(this._data['modules'], function(n) {
+      return n.id == module.id;
+    });
 
     this._notify();
   }

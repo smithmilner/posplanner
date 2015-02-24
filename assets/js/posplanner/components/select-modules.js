@@ -8,7 +8,7 @@ var constants = require('../constants'),
 var SelectModules = React.createClass({
 
   getInitialState: function() {
-    return { value: '' }
+    return { value: 'Cruise Missile Battery' }
   },
 
   onChange: function(e) {
@@ -28,7 +28,7 @@ var SelectModules = React.createClass({
   render: function() {
     return <div>
       <select value={this.state.value} onChange={this.onChange}>{this.getOptions()}</select>
-      <button onClick={this.addModule}>add</button>
+      <a href="#" className="button" onClick={this.addModule}>add</a>
     </div>;
   }
 
