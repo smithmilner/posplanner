@@ -60,7 +60,9 @@ class Store {
 
   // update module
   _updateModule(module) {
+    var index = _.findIndex(this._data['modules'], 'id', module.id);
 
+    this._data['modules'][index] = module;
     this._notify();
   }
 

@@ -2,13 +2,13 @@ var React = require('react');
 var _ = require('lodash');
 
 var StatsTower = require('./stats-tower');
+var StatsModule = require('./stats-module');
 
 var Stats = React.createClass({
 
   renderModules: function() {
     return _.map(this.props.modules, function(module) {
-      var online = module.online ? 'online' : 'offline';
-      return <li key={module.id}>{module.name} - {online}</li>
+      return <StatsModule module={module} />
     });
   },
 
