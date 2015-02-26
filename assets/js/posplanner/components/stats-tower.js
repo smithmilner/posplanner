@@ -2,6 +2,7 @@ var React = require('react');
 var _ = require('lodash');
 
 var data = require('../data/towers');
+var StatsOutput = require('./stats-output');
 
 var Stats = React.createClass({
 
@@ -17,8 +18,8 @@ var Stats = React.createClass({
         </thead>
         <tbody>
           <tr>
-            <td>{tower.attributes.powerOutput}</td>
-            <td>{tower.attributes.cpuOutput}</td>
+            <td><StatsOutput type={'power'} output={tower.attributes.powerOutput} modules={this.props.modules} /></td>
+            <td><StatsOutput type={'cpu'} output={tower.attributes.cpuOutput} modules={this.props.modules} /></td>
           </tr>
         </tbody>
       </table>
