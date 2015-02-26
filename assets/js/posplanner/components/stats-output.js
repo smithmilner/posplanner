@@ -9,12 +9,14 @@ var StatsOutput = React.createClass({
     var usage = 0;
 
     _.forEach(this.props.modules, function(module) {
-      usage += parseInt(data[module.name].attributes[this.props.type]);
+
+      if (module.online) {
+        usage += parseInt(data[module.name].attributes[this.props.type]);
+      }
+
     }.bind(this));
 
-    console.log(this.props.output - usage);
-
-    return this.props.output - usage;
+    return <span className={"tower-" + this.props.type + "-output"}>{this.props.output - usage}</span>;
   }
 
 });
