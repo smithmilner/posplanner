@@ -21,6 +21,7 @@
   "dependencies": {
     "flux": "^2.0.1",
     "lodash": "^3.3.0",
+    "numeral": "^1.5.3",
     "react": "^0.12.2"
   },
   "devDependencies": {
