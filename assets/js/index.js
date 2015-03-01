@@ -1,5 +1,5 @@
-var React = require('react');
-var PosPlanner = require('./posplanner');
+var React = require('react'),
+    PosPlanner = require('./posplanner');
 
 React.render(
   <div className="container">

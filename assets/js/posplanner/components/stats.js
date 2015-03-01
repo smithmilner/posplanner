@@ -9,7 +9,7 @@ var Stats = React.createClass({
 
   renderList: function(list) {
     return _.map(list, function(module) {
-      return <StatsModule key={module.id} module={module} />
+      return <StatsModule key={module.id} module={module} />;
     });
   },
 

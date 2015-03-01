@@ -12,7 +12,6 @@ var SelectTower = React.createClass({
   },
 
   getOptions: function() {
-    var stateTower = this.props.tower;
     var list = _.map(data, function (tower) {
       return <option key={tower.typeID} value={tower.typeName}>{tower.typeName}</option>;
     });

@@ -1,6 +1,6 @@
 var React = require('react'),
     _ = require('lodash'),
-    numeral = require('numeral');;
+    numeral = require('numeral');
 
 var data = require('../data/modules');
 
@@ -19,7 +19,7 @@ var StatsOutput = React.createClass({
 
     var output = this.props.output - usage;
 
-    return <span className={"tower-" + this.props.type + "-output"}>{numeral(output).format('0,0')}</span>;
+    return <span className={'tower-' + this.props.type + '-output'}>{numeral(output).format('0,0')}</span>;
   }
 
 });

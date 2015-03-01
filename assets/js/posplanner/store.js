@@ -4,10 +4,11 @@ var constants = require('./constants'),
     _ = require('lodash');
 
 class Store {
-  constructor() {
-    this._id = 1;
 
-    this._data = {
+  constructor() {
+    this.id = 1;
+
+    this.data = {
       'tower': '',
       'modules': []
     };
@@ -16,23 +17,23 @@ class Store {
       switch (payload.type) {
 
         case constants.all:
-          this._all();
+          this.all();
           break;
 
         case constants.towerUpdate:
-          this._updateTower(payload.content);
+          this.updateTower(payload.content);
           break;
 
         case constants.moduleAdd:
-          this._addModule(payload.content);
+          this.addModule(payload.content);
           break;
 
         case constants.moduleUpdate:
-          this._updateModule(payload.content);
+          this.updateModule(payload.content);
           break;
 
         case constants.moduleRemove:
-          this._removeModule(payload.content);
+          this.removeModule(payload.content);
           break;
 
       }
@@ -41,41 +42,41 @@ class Store {
   }
 
   // update tower
-  _updateTower(tower) {
-    this._data['tower'] = tower;
-    this._notify();
+  updateTower(tower) {
+    this.data.tower = tower;
+    this.notify();
   }
 
   // add module
-  _addModule(module) {
-    this._data['modules'].push({ id: this._id++, name: module, online: true });
-    this._notify();
+  addModule(module) {
+    this.data.modules.push({ id: this.id++, name: module, online: true });
+    this.notify();
   }
 
   // update module
-  _updateModule(module) {
-    var index = _.findIndex(this._data['modules'], 'id', module.id);
+  updateModule(module) {
+    var index = _.findIndex(this.data.modules, 'id', module.id);
 
-    this._data['modules'][index] = module;
-    this._notify();
+    this.data.modules[index] = module;
+    this.notify();
   }
 
   // remove module
-  _removeModule(module) {
-    _.remove(this._data['modules'], function(n) {
-      return n.id == module.id;
+  removeModule(module) {
+    _.remove(this.data.modules, function(n) {
+      return n.id === module.id;
     });
 
-    this._notify();
+    this.notify();
   }
 
-  _all() {
-    this._notify();
+  all() {
+    this.notify();
   }
 
-  _notify() {
-    emitter.emit(constants.changed, this._data);
+  notify() {
+    emitter.emit(constants.changed, this.data);
   }
 }
 
-module.exports = new Store;
+module.exports = new Store();

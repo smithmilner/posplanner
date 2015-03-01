@@ -8,7 +8,7 @@ var constants = require('../constants'),
 var SelectModules = React.createClass({
 
   getInitialState: function() {
-    return { value: 'Cruise Missile Battery' }
+    return { value: 'Cruise Missile Battery' };
   },
 
   onChange: function(e) {

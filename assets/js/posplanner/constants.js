@@ -10,6 +10,6 @@ module.exports = {
 
   moduleRemove: 'module-remove',
 
-  changed: 'store-changed',
+  changed: 'store-changed'
 
 };

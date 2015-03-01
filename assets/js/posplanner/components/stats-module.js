@@ -15,8 +15,7 @@ var ModuleStats = React.createClass({
   },
 
   render: function() {
-    var online = this.props.module.online ? 'online' : 'offline';
-    return <li><a href="#" onClick={this.remove}>X</a> <a href="#" onClick={this.toggle}>{this.props.module.name}</a></li>
+    return <li><a href="#" onClick={this.remove}>X</a> <a href="#" onClick={this.toggle}>{this.props.module.name}</a></li>;
   }
 
 });
